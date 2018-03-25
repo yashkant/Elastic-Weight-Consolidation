@@ -38,6 +38,8 @@ class Model:
         self.cross_entropy = tf.reduce_mean(tf.nn.softmax_cross_entropy_with_logits(logits=self.y, labels=y_))
         self.train_step = None
         self.fisher = None
+        self.star_vars = None
+        self.ewc_loss = None
         self.vanilla_loss()
         self.correct_preds = (tf.equal(tf.argmax(self.y, axis=1), tf.argmax(y_, axis=1)))
 
@@ -71,19 +73,19 @@ class Model:
                 self.fisher[j] += np.square(dervs[j])
 
             if plot_diffs:
-                if i%disp_freq == 0 and i > 0:
+                if i % disp_freq == 0 and i > 0:
                     fisher_diff = 0
 
                     for k in range(len(self.fisher)):
-                        fisher_diff += np.sum(np.absolute(self.fisher[k]/(i+1) - fisher_prev[k]))
-                        mean_diff = np.mean(fisher_diff) #makes no sense to me!
+                        fisher_diff += np.sum(np.absolute(self.fisher[k] / (i + 1) - fisher_prev[k]))
+                        mean_diff = np.mean(fisher_diff)  # makes no sense to me!
                         mean_diffs = np.append(mean_diffs, mean_diff)
 
                     # replace previous
                     for l in range(len(fisher_prev)):
                         fisher_prev[v] = self.fisher[l]
 
-                    plt.plot(range(disp_freq+1, i+2, disp_freq), mean_diffs)
+                    plt.plot(range(disp_freq + 1, i + 2, disp_freq), mean_diffs)
                     plt.xlabel("Number of samples")
                     plt.ylabel("Mean absolute Fisher difference")
                     display.display(plt.gcf())
@@ -97,10 +99,23 @@ class Model:
         self.star_vars = []
 
         for v in range(len(self.var_list)):
-            self.star_vars.append(self.var_list[v].eval()) # without sess ??
+            self.star_vars.append(self.var_list[v].eval())  # without sess ??
 
     def restore(self, sess):
         # reassign optimal weights for latest task
         if hasattr(self, "star_vars"):
             for v in range(len(self.var_list)):
                 sess.run(self.var_list[v].assign(self.star_vars[v]))
+
+    # having doubts with the graph here! I think let's try tensor-board maybe :D
+    def ewc_loss(self, lam):
+        if not hasattr(self, "ewc_loss"):
+            self.ewc_loss = self.cross_entropy
+
+        # I feel in the third step loss the values of fisher and star_vars would change for the
+        # earlier task as well! Does the graph save values of the vars as well ?
+        for v in range(len(self.var_list)):
+            self.ewc_loss += (lam / 2) * tf.reduce_sum(tf.multiply(self.fisher[v].astype(np.float32),
+                                                                   tf.square(self.var_list[v] - self.star_vars[v])))
+
+        self.train_step = tf.train.GradientDescentOptimizer(.1).minimize(self.ewc_loss)
