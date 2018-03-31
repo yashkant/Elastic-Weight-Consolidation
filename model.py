@@ -36,10 +36,6 @@ class Model:
         self.h1 = tf.nn.relu(tf.matmul(x, self.w1) + self.b1)
         self.y = tf.matmul(self.h1, self.w2) + self.b2
         self.cross_entropy = tf.reduce_mean(tf.nn.softmax_cross_entropy_with_logits_v2(logits=self.y, labels=y_))
-        self.train_step = None
-        self.fisher = None
-        self.star_vars = None
-        self.ewc_loss = None
         self.vanilla_loss()
         self.correct_preds = (tf.equal(tf.argmax(self.y, axis=1), tf.argmax(y_, axis=1)))
 

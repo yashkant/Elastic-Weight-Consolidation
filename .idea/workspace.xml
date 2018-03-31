@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="322d0a3d-aabd-4a11-ace8-c27cf775a30d" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/main.ipynb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/model.py" beforeDir="false" afterPath="$PROJECT_DIR$/model.py" afterDir="false" />
     </list>
@@ -14,35 +15,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="model.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="model.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/model.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="280">
-              <caret line="49" column="27" selection-start-line="49" selection-start-column="27" selection-end-line="49" selection-end-column="27" />
-              <folding>
-                <element signature="e#163#259#0" />
-                <element signature="e#292#363#0" />
-                <element signature="e#419#1471#0" />
-                <element signature="e#1532#1616#0" />
-                <element signature="e#1741#3459#0" />
-                <element signature="e#2042#2114#0" />
-                <element signature="e#2165#3374#0" />
-                <element signature="e#2548#3374#0" />
-                <element signature="e#2601#3374#0" />
-                <element signature="e#2696#2925#0" />
-                <element signature="e#3489#3705#0" />
-                <element signature="e#3744#3942#0" />
-                <element signature="e#3838#3942#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="main.ipynb" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/main.ipynb">
-          <provider selected="true" editor-type-id="ipnb-editor">
-            <state>
-              <selected id="9" />
+            <state relative-caret-position="1061">
+              <caret line="87" column="55" lean-forward="true" selection-start-line="87" selection-start-column="55" selection-end-line="87" selection-end-column="55" />
             </state>
           </provider>
         </entry>
@@ -63,8 +40,8 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/model.py" />
         <option value="$PROJECT_DIR$/main.ipynb" />
+        <option value="$PROJECT_DIR$/model.py" />
       </list>
     </option>
   </component>
@@ -80,6 +57,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -91,7 +69,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -125,6 +102,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="60" y="-11" width="1861" height="1092" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1906318" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -137,12 +115,12 @@
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -153,21 +131,20 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="980">
           <caret line="49" column="27" selection-start-line="49" selection-start-column="27" selection-end-line="49" selection-end-column="27" />
-          <folding>
-            <element signature="e#163#259#0" />
-            <element signature="e#292#363#0" />
-            <element signature="e#419#1471#0" />
-            <element signature="e#1532#1616#0" />
-            <element signature="e#1741#3459#0" />
-            <element signature="e#2042#2114#0" />
-            <element signature="e#2165#3374#0" />
-            <element signature="e#2548#3374#0" />
-            <element signature="e#2601#3374#0" />
-            <element signature="e#2696#2925#0" />
-            <element signature="e#3489#3705#0" />
-            <element signature="e#3744#3942#0" />
-            <element signature="e#3838#3942#0" />
-          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.ipynb">
+      <provider selected="true" editor-type-id="ipnb-editor">
+        <state>
+          <selected id="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/model.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="980">
+          <caret line="49" column="27" selection-start-line="49" selection-start-column="27" selection-end-line="49" selection-end-column="27" />
         </state>
       </provider>
     </entry>
@@ -182,21 +159,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1900">
           <caret line="95" selection-start-line="95" selection-end-line="95" />
-          <folding>
-            <element signature="e#163#259#0" />
-            <element signature="e#292#363#0" />
-            <element signature="e#419#1471#0" />
-            <element signature="e#1532#1616#0" />
-            <element signature="e#1741#3459#0" />
-            <element signature="e#2042#2114#0" />
-            <element signature="e#2165#3374#0" />
-            <element signature="e#2548#3374#0" />
-            <element signature="e#2601#3374#0" />
-            <element signature="e#2696#2925#0" />
-            <element signature="e#3489#3705#0" />
-            <element signature="e#3744#3942#0" />
-            <element signature="e#3838#3942#0" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -211,21 +173,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="920">
           <caret line="95" selection-start-line="95" selection-end-line="95" />
-          <folding>
-            <element signature="e#163#259#0" />
-            <element signature="e#292#363#0" />
-            <element signature="e#419#1471#0" />
-            <element signature="e#1532#1616#0" />
-            <element signature="e#1741#3459#0" />
-            <element signature="e#2042#2114#0" />
-            <element signature="e#2165#3374#0" />
-            <element signature="e#2548#3374#0" />
-            <element signature="e#2601#3374#0" />
-            <element signature="e#2696#2925#0" />
-            <element signature="e#3489#3705#0" />
-            <element signature="e#3744#3942#0" />
-            <element signature="e#3838#3942#0" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -240,21 +187,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="920">
           <caret line="95" selection-start-line="95" selection-end-line="95" />
-          <folding>
-            <element signature="e#163#259#0" />
-            <element signature="e#292#363#0" />
-            <element signature="e#419#1471#0" />
-            <element signature="e#1532#1616#0" />
-            <element signature="e#1741#3459#0" />
-            <element signature="e#2042#2114#0" />
-            <element signature="e#2165#3374#0" />
-            <element signature="e#2548#3374#0" />
-            <element signature="e#2601#3374#0" />
-            <element signature="e#2696#2925#0" />
-            <element signature="e#3489#3705#0" />
-            <element signature="e#3744#3942#0" />
-            <element signature="e#3838#3942#0" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -266,25 +198,7 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/model.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#163#259#0" />
-            <element signature="e#292#363#0" />
-            <element signature="e#419#1471#0" />
-            <element signature="e#1532#1616#0" />
-            <element signature="e#1741#3459#0" />
-            <element signature="e#2042#2114#0" />
-            <element signature="e#2165#3374#0" />
-            <element signature="e#2548#3374#0" />
-            <element signature="e#2601#3374#0" />
-            <element signature="e#2696#2925#0" />
-            <element signature="e#3489#3705#0" />
-            <element signature="e#3744#3942#0" />
-            <element signature="e#3838#3942#0" />
-          </folding>
-        </state>
-      </provider>
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md" />
     <entry file="file:///usr/local/lib/python2.7/dist-packages/matplotlib/pyplot.py">
@@ -301,32 +215,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/model.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="49" column="27" selection-start-line="49" selection-start-column="27" selection-end-line="49" selection-end-column="27" />
-          <folding>
-            <element signature="e#163#259#0" />
-            <element signature="e#292#363#0" />
-            <element signature="e#419#1471#0" />
-            <element signature="e#1532#1616#0" />
-            <element signature="e#1741#3459#0" />
-            <element signature="e#2042#2114#0" />
-            <element signature="e#2165#3374#0" />
-            <element signature="e#2548#3374#0" />
-            <element signature="e#2601#3374#0" />
-            <element signature="e#2696#2925#0" />
-            <element signature="e#3489#3705#0" />
-            <element signature="e#3744#3942#0" />
-            <element signature="e#3838#3942#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/main.ipynb">
       <provider selected="true" editor-type-id="ipnb-editor">
         <state>
-          <selected id="9" />
+          <selected id="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/model.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1061">
+          <caret line="87" column="55" lean-forward="true" selection-start-line="87" selection-start-column="55" selection-end-line="87" selection-end-column="55" />
         </state>
       </provider>
     </entry>
